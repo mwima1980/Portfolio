@@ -137,12 +137,32 @@ small,
    CONTAINER
 ================================== */
 .container {
-  width: 95%;
-  max-width: 1600px;
-  padding: 0 1rem;
+  width: 80%;
+  max-width: 2000px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
+/* ================================
+   HEADER
+================================== */
+.site-header {
+  background-color: var(--color-surface);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+.main-nav__list {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  height: 100%;
+  list-style-type: none;
+}
+.main-nav__link {
+  text-decoration: none;
+  color: var(--color-text);
+}
 /* ================================
    💡 COMPONENTS
 ================================== */
@@ -250,7 +270,7 @@ body.dark-mode .btn {
 /* ================================
    📱 MEDIA QUERIES
 ================================== */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .grid-2 {
     grid-template-columns: 1fr;
   }
@@ -296,4 +316,4 @@ body.dark-mode .btn {
       font-size: 1.3rem;
     }
   }
-}
+} */
